@@ -67,7 +67,7 @@ const Coins = () => {
   return (
     <Container>
       <Header>
-        <Title>Coins</Title>
+        <Title>Hand Coin</Title>
       </Header>
       {isLoading ? (
         <Loader>Loading ...</Loader>
