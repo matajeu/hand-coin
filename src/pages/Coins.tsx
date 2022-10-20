@@ -4,6 +4,8 @@ import { useEffect, useState } from "react";
 
 const Container = styled.div`
   padding: 0 20px;
+  max-width: 480px;
+  margin: 0 auto;
 `;
 
 const Header = styled.header`
@@ -81,7 +83,7 @@ const Coins = () => {
         <CoinsList>
           {coins.map((coin) => (
             <Coin key={coin.id}>
-              <Link to={`/${coin.id}`} state={coin}>
+              <Link to={`/${coin.id}`} state={{ name: coin.name }}>
                 <Img
                   src={`https://coinicons-api.vercel.app/api/icon/${coin.symbol.toLowerCase()}`}
                   alt={coin.symbol}
