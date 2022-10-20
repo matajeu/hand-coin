@@ -3,6 +3,7 @@ import GlobalStyle from "./GlobalStyle";
 import { ThemeProvider } from "styled-components";
 import { theme } from "./theme";
 import Router from "./Router";
+import { ReactQueryDevtools } from "react-query/devtools";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
         <GlobalStyle />
         <Reset />
         <Router />
+        <ReactQueryDevtools initialIsOpen={true} />
       </ThemeProvider>
     </>
   );
