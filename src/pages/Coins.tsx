@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { useQuery } from "react-query";
 import { fetchCoins } from "../api";
 import { Helmet } from "react-helmet";
+import Controller from "../components/Controller";
 
 const Container = styled.div`
   padding: 0 20px;
@@ -71,6 +72,7 @@ const Coins = () => {
       <Helmet>
         <title>Hand Coin</title>
       </Helmet>
+      <Controller />
       <Header>
         <Title>Hand Coin</Title>
       </Header>
