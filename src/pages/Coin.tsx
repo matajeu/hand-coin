@@ -9,6 +9,7 @@ import {
 import styled from "styled-components";
 import { fetchCoinInfo, fetchCoinTickers } from "../api";
 import { Helmet } from "react-helmet";
+import Controller from "../components/Controller";
 
 const Title = styled.h1`
   font-size: 48px;
@@ -161,6 +162,7 @@ const Coin = () => {
           }`}
         </title>
       </Helmet>
+      <Controller />
       <Header>
         <Title>
           {state?.name ? state.name : loading ? "Loading..." : infoData?.name}
