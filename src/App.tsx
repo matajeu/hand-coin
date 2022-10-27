@@ -3,7 +3,6 @@ import GlobalStyle from "./GlobalStyle";
 import { ThemeProvider } from "styled-components";
 import { darkTheme, lightTheme } from "./theme";
 import Router from "./Router";
-import { ReactQueryDevtools } from "react-query/devtools";
 import { useRecoilValue } from "recoil";
 import { themeModeAtom } from "./atoms";
 
@@ -15,7 +14,6 @@ function App() {
         <GlobalStyle />
         <Reset />
         <Router />
-        <ReactQueryDevtools initialIsOpen={true} />
       </ThemeProvider>
     </>
   );
