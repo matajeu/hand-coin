@@ -1,6 +1,6 @@
 import { useQuery } from "react-query";
 import { useOutletContext } from "react-router-dom";
-import { fetchCoinHistory } from "../api";
+import { fetchCoinHistory } from "../api/api";
 import ApexChart from "react-apexcharts";
 
 interface IChartProps {

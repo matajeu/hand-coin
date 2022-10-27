@@ -1,6 +1,6 @@
 import { Link, useLocation } from "react-router-dom";
 import { useRecoilState } from "recoil";
-import { themeModeAtom } from "../atoms";
+import { themeModeAtom } from "../store/atoms";
 import styled from "styled-components";
 import { FaArrowLeft } from "react-icons/fa";
 

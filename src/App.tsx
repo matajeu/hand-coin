@@ -1,10 +1,10 @@
 import { Reset } from "styled-reset";
-import GlobalStyle from "./GlobalStyle";
+import GlobalStyle from "./styles/GlobalStyle";
 import { ThemeProvider } from "styled-components";
-import { darkTheme, lightTheme } from "./theme";
+import { darkTheme, lightTheme } from "./styles/theme";
 import Router from "./Router";
 import { useRecoilValue } from "recoil";
-import { themeModeAtom } from "./atoms";
+import { themeModeAtom } from "./store/atoms";
 
 function App() {
   const themeMode = useRecoilValue(themeModeAtom);
